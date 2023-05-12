@@ -18,8 +18,8 @@ To install AWS VPC CLI, follow these steps:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/username/aws_vpc_cli.git
-cd aws_vpc_cli
+git clone https://github.com/IrakliDevelop/vpc-cli-python
+cd vpc-cli-python
 ```
 
 2. Install the dependencies using Poetry:
