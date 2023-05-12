@@ -1,8 +1,4 @@
 import argparse
-import boto3
-import os
-from dotenv import load_dotenv
-import logging
 
 from utils.create_vpc import create_vpc
 from utils.igw import create_igw, attach_igw_to_vpc
