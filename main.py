@@ -15,13 +15,10 @@ def main():
     client = init_client()
 
     vpc_id = create_vpc(client, args.vpc_name)
-    print(f"Created VPC with ID {vpc_id}")
 
     igw_id = create_igw(client)
-    print(f"Created IGW with ID {igw_id}")
 
     attach_igw_to_vpc(client, vpc_id, igw_id)
-    print(f"Attached IGW {igw_id} to VPC {vpc_id}")
 
 if __name__ == "__main__":
     main()
