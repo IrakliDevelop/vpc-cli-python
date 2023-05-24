@@ -43,10 +43,19 @@ Replace `your_access_key_id`, `your_secret_access_key`, and `your_aws_region` wi
 To use AWS VPC CLI, run the following command:
 
 ```bash
-poetry run python main.py <vpc_name>
+poetry run python main.py <command> [arguments]
 ```
 
-Replace `<vpc_name>` with the name you want to assign to the VPC. This script will create a VPC with the specified name, create an IGW, and attach the IGW to the VPC. It will then print the IDs of the created VPC and IGW.
+## Available Commands
+
+- `create-vpc <vpc_name>` - Creates a VPC and IGW and attaches the IGW to the VPC.
+- `launch-ec2 <vpc_id> <subnet_id>` - Launches an EC2 instance in the specified VPC and subnet.
+
+For more information on the arguments and options for each command, run:
+
+```bash
+poetry run python main.py <command> --help
+```
 
 ## Contributing to AWS VPC CLI
 
